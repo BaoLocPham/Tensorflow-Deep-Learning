@@ -139,6 +139,30 @@ def pred_and_plot(model, filename, class_names):
   plt.title(f"Prediction: {pred_class}")
   plt.axis(False);
   
+def predict_and_plot_multiples(model, dataset, class_names):
+  """
+  predict and plot results
+
+  Args:
+    model (tensorflow model)
+    dataset (tensorflow dataset)
+    class_names (list of string)
+  """
+  plt.figure(figsize=(10,10))
+  for image, labels in test_data_optimized.take(1):
+    for i in range(9):
+      img = image[i]
+      true_label = labels[i]
+      pred_prob = loaded_model.predict(tf.expand_dims(img, axis=0))
+      pred_class = pred_prob.argmax()
+      color = "g" if true_label == pred_class else "r"
+      title = f"{class_names[pred_class]}" if true_label == pred_class else f"{class_names[pred_class]}, true: {class_names[true_label]}"
+      plt.subplot(3, 3, i+1)
+      plt.imshow(img/255.)
+      plt.axis(False)
+      plt.title(title, color=color)
+  plt.show()
+  
 import datetime
 
 def create_tensorboard_callback(dir_name, experiment_name):
