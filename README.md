@@ -26,6 +26,16 @@
   * Tensorflow == 2.5.x
   
   If you run these on collab, the environment or some TensorFlow module will be a little bit different.
+### Basic Intuition
+#### Math
+* [ML Cheatsheet: Calculus](https://ml-cheatsheet.readthedocs.io/en/latest/calculus.html)
+* [ML Cheatsheet: Linear Algebra](https://ml-cheatsheet.readthedocs.io/en/latest/linear_algebra.html)
+* [Probability Cheatsheet](http://www.wzchen.com/probability-cheatsheet/)
+* [ML Cheatsheet: Math notation](https://ml-cheatsheet.readthedocs.io/en/latest/math_notation.html)
+#### ANN
+* [ML Cheatsheet: ANN](https://ml-cheatsheet.readthedocs.io/en/latest/nn_concepts.html#)
+* [3Blue1Brown: ANN - playlist](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+* [Neural Network Simulator](https://www.mladdict.com/neural-network-simulator)
   
 | Number     | Notebook | Description | Extras |
 | ----------- | ----------- | ----------- | ----------- |
